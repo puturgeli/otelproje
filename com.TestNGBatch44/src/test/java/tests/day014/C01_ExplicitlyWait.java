@@ -42,12 +42,6 @@ public class C01_ExplicitlyWait extends TestBase {
         WebElement backMesageElemet= driver.findElement(By.xpath("//p[@id='message']"));
         Assert.assertTrue(backMesageElemet.isDisplayed());
 
-
-
-
-
-
-
     }
 
 
@@ -62,7 +56,7 @@ public class C01_ExplicitlyWait extends TestBase {
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
 
         //explici kullanabilmek için bir wait objesi tanımlama lazım
-        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
     //    4. Remove butonuna basin.
         driver.findElement(By.cssSelector("[onclick=\"swapCheckbox()\"]")).click();
 
