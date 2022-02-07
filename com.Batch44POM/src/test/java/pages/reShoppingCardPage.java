@@ -79,11 +79,11 @@ public class reShoppingCardPage {
 
   public String secilenUrunFiyatTopla() {
     Locale locale  = new Locale("en", "UK");
-    String pattern = "####.##";
+    String pattern = "####.###";
     DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
     decimalFormat.applyPattern(pattern);
     String fiyat;
-    double toplam = 0.0;
+    double toplam = 0;
     String Sontoplam;
     for (WebElement w : sepettekiUrunFiyatListesi) {
       fiyat = w.getText().replace("$", "");

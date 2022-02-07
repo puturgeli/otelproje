@@ -1,6 +1,10 @@
 package tests.day19;
 
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.UnhandledAlertException;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.reShoppingCardPage;
@@ -40,7 +44,18 @@ public class C03_HomeWork {
 
       Thread.sleep(3000);
 
-      Driver.getDriver().switchTo().alert().accept();
+      try {
+          Driver.getDriver().switchTo().alert().accept();
+      } catch (UnhandledAlertException f) {
+          try {
+              Alert alert = Driver.getDriver().switchTo().alert();
+              String alertText = alert.getText();
+              System.out.println("Alert data: " + alertText);
+              alert.accept();
+          } catch (NoAlertPresentException e) {
+              e.printStackTrace();
+          }
+      }
 
       Driver.closeDriver();
 
