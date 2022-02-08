@@ -10,6 +10,7 @@ import utilities.Driver;
 public class C02_propertiesIlkClass {
 
   @Test
+
   public void positiveLoginTesti() {
 
     // hotel mycamp sitesine positie login testini POM'a tam uygun olarak yapınız

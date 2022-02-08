@@ -8,7 +8,7 @@ public class C04_HotelMyCampPositiveLogin {
     // 1 ) Bir Class olustur : PositiveTest
     // 2) Bir test method olustur positiveLoginTest()
 
-    @Test
+    @Test(groups = {"miniRegression", "smoke"})
     public void positiveLoginTest(){
 
 

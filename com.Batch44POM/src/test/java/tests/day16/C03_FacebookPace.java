@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C03_FacebookPace {
 
-  @Test
+  @Test(groups = {"miniRegression" ,"regression"})
   public void test01() throws InterruptedException {
     // 1 - https://www.facebook.com/ adresine gidin
       Driver.getDriver().get("https://www.facebook.com");

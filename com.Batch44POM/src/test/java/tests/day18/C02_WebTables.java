@@ -24,7 +24,7 @@ HMYCWebTablePage hmcWepTable;
 
 }
 
-    @Test
+    @Test()
     public void table() {
     // ● table( ) metodu oluşturun
     //            ○ Tüm table body’sinin boyutunu(sutun sayisi) bulun. /tbody
@@ -77,7 +77,7 @@ HMYCWebTablePage hmcWepTable;
 
 
 
-
+Driver.closeDriver();
 
 
 
