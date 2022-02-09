@@ -1,4 +1,4 @@
-package tests.day16;
+package tests.day20.day16;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

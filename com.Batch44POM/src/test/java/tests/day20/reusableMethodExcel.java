@@ -3,15 +3,13 @@ package tests.day20;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class reusableMethod {
+public class reusableMethodExcel {
 
   // bir metod oluşturalım
   // dosya yolu, sayfa ismi  ve satır, hücre index'ini verince hücre bilgisini döndürsün
